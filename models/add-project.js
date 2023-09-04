@@ -20,7 +20,10 @@ const PROJECT_SCHEMA = new MONGOOSE.Schema({
     allocateMachine: {
         type: OBJECT_ID, 
         ref: 'MachineCollection'
-    }
+    },
+    color: {
+        type: STRING
+    },
 })
 
 const PROJECT = MONGOOSE.model("ProjectCollection" , PROJECT_SCHEMA);
